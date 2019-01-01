@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Modernmarket.ng</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+
+        <!-- Top bar-->
+        <div class="top-bar">
+            <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 d-md-block d-none">
+                <p><a href="tel://0813 5661 282">Contact us on +234 (0) 813 5661 282</a></p>
+                </div>
+                <div class="col-md-6">
+                <div class="d-flex justify-content-md-end justify-content-between">
+                
+                    <div class="login"><a href="customer-register.html" href="#" data-toggle="modal" data-target="#login-modal" class="login-btn"><i class="fa fa-sign-in"></i><span class="d-none d-md-inline-block">Sign In</span></a><a href="customer-register.html" href="customer-register.html" class="signup-btn"><i class="fa fa-user"></i><span class="d-none d-md-inline-block">Sign Up</span></a></div>
+                    
+                </div>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+            <!-- Top bar end-->
+
+    <!-- Login Modal Signin-->
+    <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true" class="modal fade">
+            <div role="document" class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h4 id="login-modalLabel" class="modal-title">Customer Login</h4>
+                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                <form action="customer-orders.html" method="get">
+                    <div class="form-group">
+                    <input id="email_modal" type="text" placeholder="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                    <input id="password_modal" type="password" placeholder="password" class="form-control">
+                    </div>
+                    <p class="text-center">
+                    <button class="btn btn-template-outlined"><i class="fa fa-sign-in"></i> Log in</button>
+                    </p>
+                </form>
+                <p class="text-center text-muted">Not registered yet?</p>
+                <p class="text-center text-muted"><a href="customer-register.html" href="customer-register.html"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Login Sign In modal end-->
+
+    
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="modernmarket-load"></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <!-- Logo -->
+                        <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="Logo"></a>
+                        <!-- Navbar Toggler -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#modernmarketNavigation" aria-controls="modernmarketNavigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <!-- Navbar -->
+                        <div class="collapse navbar-collapse" id="modernmarketNavigation">
+                                <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active">
+                                            <a href="index.html" class="nav-link  badge">Home <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        
+                                        <li class="nav-item">
+                                            <a href="customer-register.html" class="nav-link  badge">Clothing</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="customer-register.html" class="nav-link  badge">Vegetables</a>
+                                        </li>
+                                        <li class="nav-item  ">
+                                            <a href="customer-register.html" class="nav-link badge">Gadgets</a>
+                                        </li>
+                                        
+                                        <li class="nav-item">
+                                            <a href="cart.html" class="nav-link waves-effect badge">
+                                            <span class="badge badge-red red z-depth-1 mr-1"> 1 </span>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <span class="clearfix d-none d-sm-inline-block badge"> Cart </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold badge " href="https://mdbootstrap.com/previews/templates/e-commerce/html/cart/cart-v1.html#">
+                                                <i class="fa fa-cog blue-text"></i> Settings</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle waves-effect waves-light dark-grey-text font-weight-bold badge" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <i class="fa fa-user blue-text"></i> Profile </a>
+                                                <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
+                                                <a class="dropdown-item waves-effect waves-light" href="https://mdbootstrap.com/previews/templates/e-commerce/html/cart/cart-v1.html#">My account</a>
+                                                <a class="dropdown-item waves-effect waves-light" href="https://mdbootstrap.com/previews/templates/e-commerce/html/cart/cart-v1.html#">Log out</a>
+                                                </div>
+                                            </li>
+                                        
+                                        
+                                </ul>
+                                
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--  Header Area End  -->
+
+    <!--  Hero Area Start  -->
+    <div class="hero-area">
+        <!-- Hero Slides Area -->
+        <div class="hero-slides owl-carousel">
+            <!-- First Slide -->
+            <div class="single-hero-slide bg-img background-overlay" style="background-image: url(img/hero1.jpg);"></div>
+            <!-- First Slide -->
+            <div class="single-hero-slide bg-img background-overlay" style="background-image: url(img/hero2.jpg);"></div>   
+    </div>
+    <!-- Hero Area End -->
+  
+    <!--TODO:: SEARCH FORM -->
+
+    <!-- TODO: Content Area-->
+    <div class="main-content-wrapper section-padding-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- ============= Post Content Area Start ============= -->
+                <div class="col-12 col-lg-8">
+                    <div class="post-content-area mb-50">
+
+                        <!-- category Area -->
+                        <div class="modernmarket-category-area mt-50">
+                            <ul class="nav nav-tabs" id="categoryTab" role="tablist">
+                                <li class="title">What we have</li>
+
+                                <li class="nav-item">
+                                    <a href="customer-register.html" class="nav-link active" id="all-items-tab" data-toggle="tab" href="#modernmarket-all-items-tab" role="all-tab" aria-controls="modernmarket-all-items-tab" aria-selected="true">All</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="customer-register.html" class="nav-link" id="clothing-item-tab" data-toggle="tab" href="#modernmarket-clothing-items-tab" role="clothing-tab" aria-controls="modernmarket-clothing-items" aria-selected="false">Clothing</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="customer-register.html" class="nav-link" id="vegetables-tab" data-toggle="tab" href="#modernmarket-vegetables-tab" role="vegetable-tab" aria-controls="modernmarket-vegetables-tab" aria-selected="false">Vegetables</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="customer-register.html" class="nav-link" id="gadgets-tab" data-toggle="tab" href="#modernmarket-gadgets-tab" role="gadget-tab" aria-controls="modernmarket-gadgets-tab" aria-selected="false">Gadgets</a>
+                                </li>
+                                <li class="nav-item">
+                                        <div id="search-wrapper">
+                                                <form action="#">
+                                                    <input type="text" id="search" placeholder="Search Item...">
+                                                    <div id="close-icon"></div>
+                                                    <input class="d-none" type="submit" value="">
+                                                </form>
+                                            </div>
+                                </li>
+                            </ul>
+                            
+
+                            <!-- Products Items Tab Content -->
+                            <section class="text-center mb-4 ">
+                                   
+                                <!--All Category Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div id="modernmarket-all-items-tab" class=" col-lg-3 col-md-6 mb-4">
+                                        <!--Card-->
+                                        <div class="card">
+                                            <!--Card image-->
+                                            <div class="view overlay">
+                                            <img src="./img/laptop.jpg" class="card-img-top" alt="">
+                                            <a href="customer-register.html" href="customer-register.html">
+                                                <div class="mask rgba-white-slight"></div>
+                                            </a>
+                                            </div>
+                                            <!--Card image-->
+                        
+                                            <!--Card content-->
+                                            <div class="card-body text-center">
+                                                <!--Category & Title-->
+                                                <a href="customer-register.html" href="" class="grey-text">
+                                                    <h5>Shirt</h5>
+                                                </a>
+                                                <h5>
+                                                    <strong>
+                                                    <a href="customer-register.html" href="" class="dark-grey-text">HP Envy
+                                                        <span class="badge badge-pill badge-danger">NEW</span>
+                                                    </a>
+                                                    </strong>
+                                                </h5>
+                            
+                                                <h4 class="badge deep-blue-gradient">
+                                                    <strong>&#8358; 530,000</strong>
+                                                </h4>
+                                                <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>                            
+                                            </div>
+                                            <!--Card content end-->
+                            
+                                            </div>
+                                        <!-- Card  End-->
+                        
+                                    </div>
+                                    <!--Grid column end-->
+                                    <!--Grid column start-->
+                                    <div id="modernmarket-all-items-tab" class=" col-lg-3 col-md-6 mb-4">
+                                        <!--Card start-->
+                                        <div class="card">
+                                            <!--Card image start-->
+                                            <div class="view overlay">
+                                                <img src="./img/red-shirt.jpg" class="card-img-top" alt="">
+                                                <a href="customer-register.html">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <!--Card image-->
+
+                                            <!--Card content-->
+                                            <div class="card-body text-center">
+                                                <!--Category & Title-->
+                                                <a href="customer-register.html" href="" class="grey-text">
+                                                    <h5>Sport wear</h5>
+                                                </a>
+                                                <h5>
+                                                    <strong>
+                                                    <a href="customer-register.html" href="" class="dark-grey-text">Sweatshirt</a>
+                                                    </strong>
+                                                </h5>
+                                
+                                                <h4 class="badge deep-blue-gradient">
+                                                    <strong>&#8358; 139</strong>
+                                                </h4>
+                                                <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                            </div>
+                                            <!--Card content end-->
+                            
+                                        </div>
+                                        <!--Card End-->
+                        
+                                    </div>
+                                    <!--Grid column end -->
+                        
+                                    <!--Grid column start-->
+                                    <div id="modernmarket-all-items-tab" class=" col-lg-3 col-md-6 mb-4">
+                        
+                                        <!--Card start-->
+                                        <div class="card">
+                            
+                                            <!--Card image start-->
+                                            <div class="view overlay">
+                                                <img src="./img/headset.jpg" class="card-img-top" alt="">
+                                                <a href="customer-register.html">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <!--Card image end-->
+                            
+                                            <!--Card content start-->
+                                            <div class="card-body text-center">
+                                            <!--Category & Title-->
+                                                <a href="customer-register.html" href="" class="grey-text">
+                                                    <h5>Sport wear</h5>
+                                                </a>
+                                                <h5>
+                                                    <strong>
+                                                    <a href="customer-register.html" href="" class="dark-grey-text">Headset
+                                                        <span class="badge badge-pill badge-primary">bestseller</span>
+                                                    </a>
+                                                    </strong>
+                                                </h5>
+                                
+                                                <h4 class="badge deep-blue-gradient">
+                                                    <strong>&#8358; 99,000</strong>
+                                                </h4>
+                                                <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                            </div>
+                                            <!--Card content end-->
+                            
+                                        </div>
+                                        <!--Card end-->
+                            
+                                    </div>
+                                    <!--Grid column end-->
+                        
+                                    <!--Fourth column-->
+                                    <div id="modernmarket-all-items-tab" class=" col-lg-3 col-md-6 mb-4">
+                        
+                                        <!--Card start-->
+                                        <div class="card">
+                            
+                                            <!--Card image start-->
+                                            <div class="view overlay">
+                                                <img src="./img/black-jacket.jpg" class="card-img-top" alt="">
+                                                <a href="customer-register.html">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <!--Card image-->
+                            
+                                            <!--Card content-->
+                                            <div class="card-body text-center">
+                                                <!--Category & Title-->
+                                                <a href="customer-register.html" href="" class="grey-text">
+                                                    <h5>Outwear</h5>
+                                                </a>
+                                                <h5>
+                                                    <strong>
+                                                    <a href="customer-register.html" href="" class="dark-grey-text">Black jacket</a>
+                                                    </strong>
+                                                </h5>
+                                
+                                                <h4 class="badge deep-blue-gradient">
+                                                    <strong>&#8358; 219</strong>
+                                                </h4>
+                                                <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                            </div>
+                                            <!--Card content end-->
+                            
+                                        </div>
+                                        <!--Card end-->
+                        
+                                    </div>
+                                    <!--Fourth column end-->
+                        
+                                </div>
+                                <!--All Category Grid row end-->
+
+                                <!--Clothing Category Grid row-->
+                                <div class="row">
+                                        <!--Grid column-->
+                                        <div id="modernmarket-all-items-tab" class=" col-lg-3 col-md-6 mb-4">
+                                            <!--Card-->
+                                            <div class="card">
+                                                <!--Card image-->
+                                                <div class="view overlay">
+                                                <img src="./img/blue-shirt.jpg" class="card-img-top" alt="">
+                                                <a href="customer-register.html">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                                </div>
+                                                <!--Card image-->
+                            
+                                                <!--Card content-->
+                                                <div class="card-body text-center">
+                                                    <!--Category & Title-->
+                                                    <a href="customer-register.html" href="" class="grey-text">
+                                                        <h5>Shirt</h5>
+                                                    </a>
+                                                    <h5>
+                                                        <strong>
+                                                        <a href="customer-register.html" href="" class="dark-grey-text">Denim shirt
+                                                            <span class="badge badge-pill badge-danger">NEW</span>
+                                                        </a>
+                                                        </strong>
+                                                    </h5>
+                                
+                                                    <h4 class="badge deep-blue-gradient">
+                                                        <strong>&#8358; 120</strong>
+                                                    </h4>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                                </div>
+                                                <!--Card content end-->
+                                
+                                                </div>
+                                            <!-- Card  End-->
+                            
+                                        </div>
+                                        <!--Grid column end-->
+                            
+                                        <!--Grid column start-->
+                                        <div id="modernmarket-all-items-tab" class=" col-lg-3 col-md-6 mb-4">
+                                            <!--Card start-->
+                                            <div class="card">
+                                                <!--Card image start-->
+                                                <div class="view overlay">
+                                                    <img src="./img/phone.jpg" class="card-img-top" alt="">
+                                                    <a href="customer-register.html">
+                                                        <div class="mask rgba-white-slight"></div>
+                                                    </a>
+                                                </div>
+                                                <!--Card image-->
+    
+                                                <!--Card content-->
+                                                <div class="card-body text-center">
+                                                    <!--Category & Title-->
+                                                    <a href="customer-register.html" href="" class="grey-text">
+                                                        <h5>Samsung S9</h5>
+                                                    </a>
+                                                    <h5>
+                                                        <strong>
+                                                        <a href="customer-register.html" href="" class="dark-grey-text">Sweatshirt</a>
+                                                        </strong>
+                                                    </h5>
+                                    
+                                                    <h4 class="badge deep-blue-gradient">
+                                                        <strong>&#8358; 350,000</strong>
+                                                    </h4>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                                </div>
+                                                <!--Card content end-->
+                                
+                                            </div>
+                                            <!--Card End-->
+                            
+                                        </div>
+                                        <!--Grid column end -->
+                            
+                                        <!--Grid column start-->
+                                        <div id="modernmarket-all-items-tab" class=" col-lg-3 col-md-6 mb-4">
+                            
+                                            <!--Card start-->
+                                            <div class="card">
+                                
+                                                <!--Card image start-->
+                                                <div class="view overlay">
+                                                    <img src="./img/grey-shirt.jpg" class="card-img-top" alt="">
+                                                    <a href="customer-register.html">
+                                                        <div class="mask rgba-white-slight"></div>
+                                                    </a>
+                                                </div>
+                                                <!--Card image end-->
+                                
+                                                <!--Card content start-->
+                                                <div class="card-body text-center">
+                                                <!--Category & Title-->
+                                                    <a href="customer-register.html" href="" class="grey-text">
+                                                        <h5>Sport wear</h5>
+                                                    </a>
+                                                    <h5>
+                                                        <strong>
+                                                        <a href="customer-register.html" href="" class="dark-grey-text">Grey blouse
+                                                            <span class="badge badge-pill badge-primary">bestseller</span>
+                                                        </a>
+                                                        </strong>
+                                                    </h5>
+                                    
+                                                    <h4 class="badge deep-blue-gradient">
+                                                        <strong>&#8358; 99</strong>
+                                                    </h4>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                                </div>
+                                                <!--Card content end-->
+                                
+                                            </div>
+                                            <!--Card end-->
+                                
+                                        </div>
+                                        <!--Grid column end-->
+                            
+                                        <!--Fourth column-->
+                                        <div id="modernmarket-all-items-tab" class=" col-lg-3 col-md-6 mb-4">
+                            
+                                            <!--Card start-->
+                                            <div class="card">
+                                
+                                                <!--Card image start-->
+                                                <div class="view overlay">
+                                                    <img src="./img/black-jacket.jpg" class="card-img-top" alt="">
+                                                    <a href="customer-register.html">
+                                                        <div class="mask rgba-white-slight"></div>
+                                                    </a>
+                                                </div>
+                                                <!--Card image-->
+                                
+                                                <!--Card content-->
+                                                <div class="card-body text-center">
+                                                    <!--Category & Title-->
+                                                    <a href="customer-register.html" href="" class="grey-text">
+                                                        <h5>Outwear</h5>
+                                                    </a>
+                                                    <h5>
+                                                        <strong>
+                                                        <a href="customer-register.html" href="" class="dark-grey-text">Black jacket</a>
+                                                        </strong>
+                                                    </h5>
+                                    
+                                                    <h4 class="badge deep-blue-gradient">
+                                                        <strong>&#8358; 219</strong>
+                                                    </h4>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                
+                                                </div>
+                                                <!--Card content end-->
+                                
+                                            </div>
+                                            <!--Card end-->
+                            
+                                        </div>
+                                        <!--Fourth column end-->
+                            
+                                    </div>
+                                    <!--Clothing Category Grid row end-->
+                                    
+
+                                
+
+                                <!--Pagination Start-->
+      <nav class="d-flex justify-content-center wow fadeIn">
+            <ul class="pagination pg-blue">
+    
+              <!--Arrow left-->
+              <li class="page-item disabled">
+                <a href="customer-register.html" class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+    
+              <li class="page-item active">
+                <a href="customer-register.html" class="page-link" href="#">1
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a href="customer-register.html" class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a href="customer-register.html" class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a href="customer-register.html" class="page-link" href="#">4</a>
+              </li>
+              <li class="page-item">
+                <a href="customer-register.html" class="page-link" href="#">5</a>
+              </li>
+    
+              <li class="page-item">
+                <a href="customer-register.html" class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!--Pagination-->
+    
+
+                                </section>
+                                <!-- Products list-->
+                            </div>
+                           
+
+                        </div>
+                        <!-- category Area -->
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Load More btn -->
+            
+        </div>
+    </div>
+    
+          
+<!--Footer Links-->
+<div class="container mt-5 mb-4 text-center text-md-left">
+    <div class="row mt-3">
+
+        <!--First column-->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+        <h6 class="text-uppercase font-weight-bold">
+            <strong>Social media</strong>
+        </h6>
+        <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+                <a href="#"><i class="fa fa-facebook mr-3"></i></p>
+            <p>
+                <a href="#"><i class="fa fa-twitter mr-3"></i></p>
+            <p>
+                <a href="#"><i class="fa fa-instagram mr-3"></i></p>
+            <p>
+                <a href="#"><i class="fa fa-google-plus mr-3"></i></p>
+        </div>
+        <!--/.First column-->
+
+        <!--Second column-->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold">
+            <strong>Products</strong>
+        </h6>
+        <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+            <a href="#">Clothing</a>
+        </p>
+        <p>
+            <a href="#">Vegetables</a>
+        </p>
+        <p>
+            <a href="#">Gadgets</a>
+        </p>
+        <p>
+            <a href="#">Food Stuff</a>
+        </p>
+        </div>
+        <!--/.Second column-->
+
+        <!--Third column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold">
+            <strong>Useful links</strong>
+        </h6>
+        <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+            <a href="#">How it works</a>
+        </p>
+        <p>
+            <a href="#">Become an agent</a>
+        </p>
+        <p>
+            <a href="#">Delivery Rates</a>
+        </p>
+        <p>
+            <a href="#">FAQs</a>
+        </p>
+        </div>
+        <!--/.Third column-->
+
+        <!--Fourth column-->
+        <div class="col-md-4 col-lg-3 col-xl-3">
+        <h6 class="text-uppercase font-weight-bold">
+            <strong>Contact</strong>
+        </h6>
+        <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+            <i class="fa fa-home mr-3"></i> Makurdi, Benue, NG</p>
+        <p>
+            <a href="mailto://info@modernmarket.com"><i class="fa fa-envelope mr-3"></i> info@modernmarket.com</p>
+        <p>
+            <a href="tel://0813 5661 282"> <i class="fa fa-phone mr-3"></i>+ 234 813 566 1282</a></p>
+        <p>
+            <i class="fa fa-print mr-3"></i> modernmarket</p>
+        </div>
+        <!--/.Fourth column-->
+
+    </div>
+    </div>
+    <!--/.Footer Links-->
+
+    
+</footer>
+<!--/.Footer-->
+      
+  <!-- Footer Area Start -->
+  <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="footer-single-widget">
+                        <a href="index.html" href="#"><img src="img/logo.png" alt=""></a>
+                        <div class="copywrite-text mt-30">
+                            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                </div>
+                                
+                <div class="col-12 col-md-4">
+                    <div class="footer-single-widget">
+                        <h5>Subscribe</h5>
+                        <form action="#" method="post">
+                            <input type="email" name="email" id="email" placeholder="Enter your mail">
+                            <button type="button"><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: block;"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+</body>
+
+</html>
